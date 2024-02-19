@@ -13,7 +13,7 @@ def get_pic(url, type_pic):
         pictures = soup.find_all('img')
         for picture in pictures:
             if picture['alt'] == type_pic:
-                pic = picture['src']  # Print the image source URL
+                pic = picture['src'] 
                 pic = cut_url(pic)
                 soup = BeautifulSoup(html_content, 'html.parser')
                 name = soup.find('h1').get_text()
