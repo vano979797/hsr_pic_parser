@@ -9,7 +9,7 @@ def get_char_pic(name):
 
 
 def get_char_icon_pic(name):
-    url = f"https://starrail.mana.wiki/c/characters/{name}"
+    url = f"{url_character}{name}"
     type_pic = 'Icon'
     return get_pic(url, type_pic)
 

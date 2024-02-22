@@ -9,6 +9,6 @@ def get_cone_pic(name):
 
 
 def get_cone_icon_pic(name):
-    url = f"https://starrail.mana.wiki/c/lightCones/{name}"
+    url = f"{url_light_cone}git{name}"
     type_pic = 'Icon'
     return get_pic(url, type_pic)
