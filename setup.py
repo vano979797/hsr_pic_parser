@@ -12,7 +12,7 @@ setup(
   description='parser to get images from hsr mana',
   long_description=readme(),
   long_description_content_type='text/markdown',
-  url='',
+  url='https://github.com/vano979797/hsr_pic_parser',
   packages=find_packages(),
   install_requires=['requests>=2.25.1', 'beautifulsoup4>=4.12.3'],
   classifiers=[
@@ -22,7 +22,7 @@ setup(
   ],
   keywords='python parse hsr',
   project_urls={
-    'Documentation': 'link'
+    'Documentation': 'https://github.com/vano979797/hsr_pic_parser/blob/4a0309d617f93c56714fe206753119f690109219/README.md'
   },
   python_requires='>=3.7'
 )
