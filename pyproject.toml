@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "hsr-picture-parser"
+version = "hsr_pic_parser 1.0.0"
+description = "parser for getting pictures from starrail.mana.wiki from url with name"
+authors = ["Ivan <vano979797@gmail.com>"]
+license = "MIT License"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.xx"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
