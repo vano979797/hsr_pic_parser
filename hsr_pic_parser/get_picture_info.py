@@ -1,6 +1,6 @@
 from bs4 import BeautifulSoup
 import requests
-from cut_url import cut_url
+from .cut_url import cut_url
 
 
 def get_pic(url, type_pic):
