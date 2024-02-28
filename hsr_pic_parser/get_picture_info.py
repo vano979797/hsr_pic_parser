@@ -13,8 +13,12 @@ def get_pic(url, type_pic):
         pictures = soup.find_all('img')
         for picture in pictures:
             if picture['alt'] == type_pic:
-                pic = picture['src'] 
-                pic = cut_url(pic)
+                pic_url = cut_url(picture['src'])
+                maybe_pic = requests.get(pic_url)
+                if maybe_pic.status_code == 500:
+                    print('Error loading the page:', maybe_pic.status_code)
+                    return
+                pic = maybe_pic.content
                 soup = BeautifulSoup(html_content, 'html.parser')
                 name = soup.find('h1').get_text()
                 return(pic, name)
