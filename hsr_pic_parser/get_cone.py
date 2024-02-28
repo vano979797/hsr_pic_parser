@@ -1,5 +1,5 @@
-from get_picture_info import get_pic
-from picture_url import url_light_cone
+from .get_picture_info import get_pic
+from .picture_url import url_light_cone
 
 
 def get_cone_pic(name):

@@ -1,5 +1,5 @@
-from get_picture_info import get_pic
-from picture_url import url_character
+from .get_picture_info import get_pic
+from .picture_url import url_character
 
 
 def get_char_pic(name):

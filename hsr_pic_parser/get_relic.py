@@ -1,5 +1,5 @@
-from get_picture_info import get_pic
-from picture_url import url_relic
+from .get_picture_info import get_pic
+from .picture_url import url_relic
 
 
 def get_relic_icon_pic(name):
