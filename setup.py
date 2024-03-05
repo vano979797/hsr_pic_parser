@@ -6,7 +6,7 @@ def readme():
 
 setup(
   name='hsr_pic_parcer',
-  version='1.0.0',
+  version='1.0.1',
   author='vano979797',
   author_email='vano979797@gmail.com',
   description='parser to get images from hsr mana',

@@ -10,6 +10,6 @@ def get_char_pic(name):
 
 def get_char_icon_pic(name):
     url = f"{url_character}{name}"
-    type_pic = 'Icon'
+    type_pic = ""
     return get_pic(url, type_pic)
 
