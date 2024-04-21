@@ -19,6 +19,7 @@ get_char_icon_pic(name) # returns binary icon picture of the character and full 
 get_cone_pic(number) # returns binary picture of the light cone and full name of the light cone
 get_cone_icon_pic(number) # returns binary icon picture of the light cone and full name of the light cone
 get_relic_icon_pic(number) # returns binary icon picture of the relic or planetary and full name of the relic or planetary
+get_character_prydwen(name) # returns binary picture of the character from prydwen
 ```
 
 ## Examples
@@ -51,4 +52,12 @@ def save_image_as_png(image_data, output_file_path):
         png_file.write(image_data)
 
 save_image_as_png(picture, f"${name}.png")
+```
+
+The code of the character picture from prydwen [prydwen.gg](https://www.prydwen.gg/star-rail/characters/).
+
+```python
+from hsr_pic_parser import get_character_prydwen
+
+name = get_character_prydwen('argenti')
 ```

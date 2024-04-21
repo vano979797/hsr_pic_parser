@@ -2,7 +2,7 @@ from bs4 import BeautifulSoup
 import requests
 
 
-def get_picp(name):
+def get_character_prydwen(name):
     response = requests.get('https://www.prydwen.gg/star-rail/characters')
 
     if response.status_code == 200:
@@ -11,7 +11,7 @@ def get_picp(name):
 
         pictures = soup.find_all('img')
         for picture in pictures:
-            if picture['alt'] == name:
+            if picture['alt'].lower() == name.lower():
                 pic_url = "https://www.prydwen.gg"+ picture['data-src']
                 maybe_pic = requests.get(pic_url)
                 if maybe_pic.status_code == 200:
