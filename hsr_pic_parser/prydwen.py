@@ -20,7 +20,3 @@ def get_character_prydwen(name):
                     print('Error loading the image:', maybe_pic.status_code)
     elif response.status_code == 500:
         print('Error loading the page:', response.status_code)
-
-
-b = get_character_prydwen('black-swan')
-print(b)
