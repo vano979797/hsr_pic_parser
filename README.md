@@ -54,7 +54,7 @@ def save_image_as_png(image_data, output_file_path):
 save_image_as_png(picture, f"${name}.png")
 ```
 
-You can get the name and the picture of the charater from prydwen [prydwen.gg](https://www.prydwen.gg/star-rail/characters/).
+You can get the name and the picture of the charater from prydwen [prydwen.gg](https://www.prydwen.gg/star-rail/characters/) by URL.
 
 ```python
 from hsr_pic_parser import get_character_prydwen
